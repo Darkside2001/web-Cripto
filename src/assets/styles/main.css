@@ -1,0 +1,71 @@
+/* ========================================
+   CRYPTOGRAPHY APP - TAILWIND SETUP
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+@config "../../../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-text-primary antialiased overflow-x-hidden font-sans;
+  }
+
+  /* Background Pattern */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  a {
+    @apply text-primary-light no-underline transition-colors duration-200 ease-in-out;
+  }
+
+  a:hover {
+    @apply text-accent;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold leading-tight text-text-primary mb-4;
+  }
+
+  h1 {
+    @apply text-5xl bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  p {
+    @apply mb-4 text-text-secondary;
+  }
+}
+
+@layer components {
+  /* Common component classes can be defined here if strictly necessary, 
+     but we will aim to use utilities in the templates. */
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-4 text-base font-semibold border-none rounded-lg cursor-pointer transition-all duration-200 relative overflow-hidden;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-br from-primary to-secondary text-white shadow-md hover:shadow-glow hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-bg-tertiary text-text-primary border border-white/10 hover:bg-bg-secondary hover:border-primary;
+  }
+}
