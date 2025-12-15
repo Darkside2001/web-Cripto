@@ -43,7 +43,8 @@ CryptoWeb es una herramienta educativa que permite a los usuarios:
 ### Producción
 - **[Docker](https://www.docker.com/)** - Contenedorización
 - **[Nginx](https://nginx.org/)** - Servidor web de alto rendimiento
-- **[Dokploy](https://dokploy.com/)** - Plataforma de despliegue
+- **[Dokploy](https://dokploy.com/)** - Plataforma de despliegue de codigo abierto (similar a Vercel)
+- **[OracleCloud](https://www.oracle.com/cloud/)** - Servicio de la nube en la cual se encuentra desplegada la página web
 
 ---
 
@@ -128,7 +129,7 @@ cryptoweb/
 - Todas las operaciones se guardan automáticamente en la vista inferior de cada uno de los algoritmos
 - Se puede limpia el historial cuando se desee y es importante tomar en cuenta que dicho historial solo se almacena en la cache del navegador razón por la cual se eliminará el historial si se borra la cache del navegador desde el cual se accede a la página.
 
-## 🎨 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 cryptoweb/

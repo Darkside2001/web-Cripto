@@ -14,7 +14,7 @@
           <h2><font-awesome-icon :icon="['fas', 'scale-balanced']" class="mr-2 text-primary" /> Enlace del Repositorio</h2>
           <p class="mt-4 text-sm text-text-muted">
             El repositorio del proyecto CryptoWeb está disponible en GitHub en el siguiente enlace:
-            <a href="" target="_blank"/>
+            <a href="https://github.com/Darkside2001/web-Cripto.git" target="_blank">https://github.com/Darkside2001/web-Cripto.git</a>
           </p>
         </Card>
 
