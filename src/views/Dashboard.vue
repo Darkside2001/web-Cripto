@@ -35,7 +35,7 @@
             <!-- Animación Lottie -->
             <ImagenAnimada 
               v-else
-              enlace="/public/imagenesAnimadas/criptografiaAnimacion.json"
+              enlace="/public/imagenesAnimadas/criptografiaAnimacion.lottie"
               ancho="500px" 
               alto="500px" 
               class="max-w-[400px]"
